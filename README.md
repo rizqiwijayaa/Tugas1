@@ -1,6 +1,4 @@
-# Tugas1
-
-#Latihan 1
+# Latihan 1
 
 ```java
 public class LatihanArray1 {
@@ -63,3 +61,92 @@ Isi array:
 2 4 6 8 10 12 14 16 18 20 
 Jumlah semua elemen: 110
 ```
+
+---
+
+# Latihan 2
+
+
+```java
+public class PencarianArray {
+```
+Kode diatas berfungsi mendefinisikan kelas publik bernama `PencarianArray`. Nama kelas harus sama dengan nama file (`PencarianArray.java`).
+
+```java
+    public static void main(String[] args) {
+```
+Kode diatas berfungsi mendeklarasikan metode `main`, yang merupakan titik awal eksekusi program.
+
+---
+
+### **Deklarasi dan Inisialisasi Variabel**
+```java
+        int[] nilai = {75, 80, 65, 90, 85, 70, 95, 88};
+```
+Kode diatas berfungsi membuat array `nilai` bertipe `int` yang berisi elemen-elemen bilangan bulat: `75, 80, 65, 90, 85, 70, 95, 88`.
+
+```java
+        int cari = 90;
+```
+Kode diatas berfungsi mendeklarasikan variabel `cari` dengan nilai `90`, yaitu nilai yang akan dicari dalam array.
+
+```java
+        boolean ketemu = false;
+```
+Kode diatas berfungsi mendeklarasikan variabel boolean `ketemu` dengan nilai awal `false`. Variabel ini akan berubah menjadi `true` jika nilai yang dicari ditemukan dalam array.
+
+```java
+        int indeks = -1;
+```
+Kode diatas berfungsi mendeklarasikan variabel `indeks` dengan nilai awal `-1`. Jika nilai yang dicari ditemukan, `indeks` akan diubah menjadi posisi (indeks) elemen tersebut dalam array.
+
+---
+
+### **Proses Pencarian dalam Array**
+```java
+        for (int i = 0; i < nilai.length; i++) {
+            if (nilai[i] == cari) {
+                ketemu = true;
+                indeks = i;
+                break;
+            }
+        }
+```
+Kode diatas berfungsi melakukan pencarian nilai dalam array menggunakan perulangan:
+- `for (int i = 0; i < nilai.length; i++)`: berfungsi sebagai melakukan iterasi dari `i = 0` hingga `i < panjang array` (`nilai.length` bernilai 8).
+- `if (nilai[i] == cari)`: berfungsi sebagai mengecek apakah elemen array pada indeks `i` sama dengan nilai yang dicari (`90`).
+- `ketemu = true;`: Jika nilai ditemukan, variabel `ketemu` diubah menjadi `true`.
+- `indeks = i;`: Menyimpan indeks tempat nilai ditemukan.
+- `break;`: berfungsi sebagai menghentikan perulangan setelah nilai ditemukan untuk meningkatkan efisiensi.
+
+---
+
+### **Menampilkan Hasil Pencarian**
+```java
+        if (ketemu) {
+            System.out.println("Nilai " + cari + " ditemukan pada indeks " + indeks);
+        } else {
+            System.out.println("Nilai " + cari + " tidak ditemukan");
+        }
+```
+Kode diatas menampilkan hasil berdasarkan kondisi:
+- Jika `ketemu` bernilai `true`, maka akan mencetak:  
+  ```
+  Nilai 90 ditemukan pada indeks 3
+  ```
+- Jika `ketemu` tetap `false`, maka akan mencetak:  
+  ```
+  Nilai 90 tidak ditemukan
+  ```
+
+---
+
+### **Output Program**
+Karena nilai `90` terdapat dalam array pada indeks `3`, output yang dihasilkan adalah:
+```
+Nilai 90 ditemukan pada indeks 3
+```
+
+---
+
+#Latihan 3
