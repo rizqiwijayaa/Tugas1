@@ -480,3 +480,312 @@ Hasil penjumlahan matriks:
 ```
 
 ---
+
+# Studi Kasus 1
+
+---
+
+**Deklarasi Kelas dan Metode Utama**
+```java
+public class studikasus1 {
+    public static void main(String[] args) {
+```
+- **`public class studikasus1`**: Mendefinisikan kelas utama dengan nama **`studikasus1`**.
+- **`public static void main(String[] args)`**: Metode utama untuk menjalankan program.
+
+---
+
+**Deklarasi dan Inisialisasi Data**
+
+**Data Nama Siswa**
+```java
+String[] namaSiswa = {"Ani", "Budi", "Cici", "Dodi", "Edi"};
+```
+- Membuat **array** bertipe **String** untuk menyimpan **5 nama siswa**.
+
+### **Data Nilai Siswa**
+```java
+int[][] nilai = {
+    {80, 85, 90}, // Nilai Ani
+    {75, 70, 85}, // Nilai Budi
+    {85, 80, 88}, // Nilai Cici
+    {90, 85, 95}, // Nilai Dodi
+    {70, 75, 80}  // Nilai Edi
+};
+```
+- Membuat **array 2D** untuk menyimpan **nilai siswa** dalam **3 mata pelajaran**.
+- **Baris** mewakili siswa dan **kolom** mewakili mata pelajaran.
+
+**Data Nama Mata Pelajaran**
+```java
+String[] mapel = {"Matematika", "Bahasa Inggris", "IPA"};
+```
+- Membuat **array** untuk menyimpan **nama mata pelajaran**.
+
+---
+
+**Menghitung Rata-Rata Nilai per Siswa**
+
+```java
+System.out.println("Rata-rata nilai per siswa:");
+for (int i = 0; i < nilai.length; i++) {
+    double total = 0;
+    for (int n : nilai[i]) {
+        total += n;
+    }
+    double rataSiswa = total / nilai[i].length;
+    System.out.printf("%s: %.2f\n", namaSiswa[i], rataSiswa);
+}
+```
+
+### **Penjelasan:**
+**Mencetak Judul:**
+   ```java
+   System.out.println("Rata-rata nilai per siswa:");
+   ```
+   Menampilkan teks **"Rata-rata nilai per siswa:"** di konsol.
+
+**Perulangan untuk Setiap Siswa:**
+   ```java
+   for (int i = 0; i < nilai.length; i++) {
+   ```
+   - **`i`** mewakili **indeks siswa**.
+   - **`nilai.length`** memberikan jumlah total siswa (**5 siswa**).
+
+**Menghitung Total Nilai Siswa:**
+   ```java
+   double total = 0;
+   for (int n : nilai[i]) {
+       total += n;
+   }
+   ```
+   - Menggunakan **for-each** untuk menjumlahkan nilai **setiap mata pelajaran** pada baris **`i`**.
+
+**Menghitung Rata-Rata Nilai Siswa:**
+   ```java
+   double rataSiswa = total / nilai[i].length;
+   ```
+   - **Rumus:** Total nilai dibagi jumlah mata pelajaran (**3 mata pelajaran**).
+
+**Menampilkan Rata-Rata per Siswa:**
+   ```java
+   System.out.printf("%s: %.2f\n", namaSiswa[i], rataSiswa);
+   ```
+   - **`%s`** untuk **nama siswa**.
+   - **`%.2f`** untuk **menampilkan rata-rata** dengan **2 digit desimal**.
+
+---
+
+**Menghitung Rata-Rata Nilai per Mata Pelajaran**
+
+```java
+System.out.println("\nRata-rata nilai per mata pelajaran:");
+for (int j = 0; j < nilai[0].length; j++) {
+    double total = 0;
+    for (int i = 0; i < nilai.length; i++) {
+        total += nilai[i][j];
+    }
+    double rataMapel = total / nilai.length;
+    System.out.printf("%s: %.2f\n", mapel[j], rataMapel);
+}
+```
+
+### **Penjelasan:**
+
+**Mencetak Judul:**
+   ```java
+   System.out.println("\nRata-rata nilai per mata pelajaran:");
+   ```
+   Menampilkan teks **"Rata-rata nilai per mata pelajaran:"**.
+
+**Perulangan untuk Setiap Mata Pelajaran:**
+   ```java
+   for (int j = 0; j < nilai[0].length; j++) {
+   ```
+   - **`j`** mewakili **indeks mata pelajaran**.
+   - **`nilai[0].length`** memberikan jumlah mata pelajaran (**3 pelajaran**).
+
+**Menghitung Total Nilai untuk Setiap Mata Pelajaran:**
+   ```java
+   double total = 0;
+   for (int i = 0; i < nilai.length; i++) {
+       total += nilai[i][j];
+   }
+   ```
+   - Menggunakan **perulangan bersarang** untuk menjumlahkan nilai **semua siswa** pada kolom **`j`**.
+
+**Menghitung Rata-Rata Mata Pelajaran:**
+   ```java
+   double rataMapel = total / nilai.length;
+   ```
+   - **Rumus:** Total nilai dibagi jumlah siswa (**5 siswa**).
+
+**Menampilkan Rata-Rata per Mata Pelajaran:**
+   ```java
+   System.out.printf("%s: %.2f\n", mapel[j], rataMapel);
+   ```
+
+---
+
+**Output Program**
+
+```text
+Rata-rata nilai per siswa:
+Ani: 85.00
+Budi: 76.67
+Cici: 84.33
+Dodi: 90.00
+Edi: 75.00
+
+Rata-rata nilai per mata pelajaran:
+Matematika: 80.00
+Bahasa Inggris: 79.00
+IPA: 87.60
+```
+
+---
+
+# Studi Kasus 2
+
+---
+
+Berikut penjelasan kode program **TicTacToe** tanpa animasi:
+
+---
+
+## **1. Deklarasi Kelas dan Metode Utama**
+```java
+public class TicTacToe {
+    public static void main(String[] args) {
+```
+- **`public class TicTacToe`**: Membuat kelas utama dengan nama **`TicTacToe`**.
+- **`public static void main(String[] args)`**: Metode utama yang dieksekusi saat program dijalankan.
+
+---
+
+## **2. Membuat Papan TicTacToe**
+
+```java
+char[][] papan = new char[3][3];
+```
+- **`char[][] papan`**: Membuat **array 2 dimensi** dengan **3 baris** dan **3 kolom** bertipe **`char`** untuk merepresentasikan **papan permainan**.
+- **Ukuran `[3][3]`** menunjukkan bahwa papan berbentuk **3x3**, sesuai dengan aturan permainan **TicTacToe**.
+
+---
+
+## **3. Inisialisasi Papan dengan Karakter Kosong ('-')**
+
+```java
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        papan[i][j] = '-';
+    }
+}
+```
+
+### **Penjelasan:**
+1. **Looping Baris:**
+   ```java
+   for (int i = 0; i < 3; i++)
+   ```
+   - **`i`** digunakan untuk **mengakses baris** dalam array.
+   - **`< 3`** karena **array** memiliki **3 baris** (**indeks 0, 1, 2**).
+
+2. **Looping Kolom:**
+   ```java
+   for (int j = 0; j < 3; j++)
+   ```
+   - **`j`** digunakan untuk **mengakses kolom** dalam setiap baris.
+   - **`< 3`** karena **array** memiliki **3 kolom** (**indeks 0, 1, 2**).
+
+3. **Inisialisasi Elemen Papan:**
+   ```java
+   papan[i][j] = '-';
+   ```
+   - Setiap elemen pada **papan** diisi dengan **karakter '-'** sebagai penanda **kotak kosong**.
+
+---
+
+## **4. Simulasi Beberapa Langkah Permainan**
+
+```java
+papan[0][0] = 'X';
+papan[1][1] = 'O';
+papan[2][2] = 'X';
+```
+
+### **Penjelasan:**
+- **`papan[0][0] = 'X'`**: Menempatkan **'X'** pada **baris 0, kolom 0**.
+- **`papan[1][1] = 'O'`**: Menempatkan **'O'** pada **baris 1, kolom 1**.
+- **`papan[2][2] = 'X'`**: Menempatkan **'X'** pada **baris 2, kolom 2**.
+
+---
+
+## **5. Menampilkan Status Papan**
+
+```java
+System.out.println("Status Papan:");
+tampilkanPapan(papan);
+```
+
+### **Penjelasan:**
+- **`System.out.println`** menampilkan teks **"Status Papan:"**.
+- Memanggil metode **`tampilkanPapan`** untuk **menampilkan kondisi papan** di konsol.
+
+---
+
+## **6. Metode tampilkanPapan()**
+
+```java
+public static void tampilkanPapan(char[][] papan) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            System.out.print(papan[i][j] + " ");
+        }
+        System.out.println();
+    }
+}
+```
+
+### **Penjelasan:**
+1. **Deklarasi Metode:**
+   ```java
+   public static void tampilkanPapan(char[][] papan)
+   ```
+   - Membuat metode **`tampilkanPapan`** yang menerima **array 2D** (**papan permainan**) sebagai **parameter**.
+
+2. **Looping Baris dan Kolom:**
+   ```java
+   for (int i = 0; i < 3; i++) {
+       for (int j = 0; j < 3; j++) {
+   ```
+   - **Dua perulangan** untuk **mengakses semua elemen array**.
+
+3. **Menampilkan Elemen Papan:**
+   ```java
+   System.out.print(papan[i][j] + " ");
+   ```
+   - Menampilkan **setiap elemen papan** dengan **spasi** sebagai **pemisah** antar **kolom**.
+
+**Ganti Baris Setelah Setiap Baris Papan Ditampilkan:**
+   ```java
+   System.out.println();
+   ```
+   - Mengganti **baris di konsol** setelah setiap **baris papan selesai ditampilkan**.
+
+---
+
+## **7. Output Program**
+
+```text
+Status Papan:
+X - - 
+- O - 
+- - X 
+```
+
+---
+
+# Tugas 3
+
+# Soal 1
