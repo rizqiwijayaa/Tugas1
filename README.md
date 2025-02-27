@@ -1,3 +1,145 @@
+# Array 1-6
+
+---
+
+# Soal 1
+
+---
+
+##**Soal 1: Menampilkan Semua Elemen Array**
+```java
+// for (int i = 0; i < number.length; i++) {
+//     System.out.print(number[i] + " ");     
+// }
+```
+**Output:**  
+```
+1 2 3 4 5 
+```
+
+**Penjelasan:**  
+- `for (int i = 0; i < number.length; i++)`: Perulangan dari indeks `0` hingga `4` (panjang array adalah `5`).
+- `System.out.print(number[i] + " ")`: Mencetak setiap elemen array `number` diikuti spasi.
+
+---
+
+## ✨ **Soal 2: Menampilkan Elemen dengan Pemisah Koma**
+```java
+// for (int i = 0; i < number.length; i++) {
+//     System.out.print(number[i]);
+//     if (i < 4) {
+//         System.out.print(",");
+//     }     
+// }
+```
+**Output:**  
+```
+1,2,3,4,5
+```
+
+**Penjelasan:**  
+- Mencetak setiap elemen array tanpa spasi.
+- `if (i < 4)`: Menambahkan koma (`,`) jika indeks belum mencapai elemen terakhir (`4`).
+
+---
+
+## ✨ **Soal 3: Menampilkan Elemen pada Indeks Genap**
+```java
+// for (int i = 0; i < number.length; i++) {
+//     if (i % 2 == 0) {
+//         System.out.print(number[i]);
+//         if (i < 4) {
+//             System.out.print(",");
+//         } 
+//     }     
+// }
+```
+**Output:**  
+```
+1,3,5
+```
+
+**Penjelasan:**  
+- `if (i % 2 == 0)`: Hanya mencetak elemen pada indeks **genap** (`0, 2, 4`).
+- Elemen pada indeks genap adalah: `number[0] = 1`, `number[2] = 3`, `number[4] = 5`.
+
+---
+
+## ✨ **Soal 4: Menampilkan Elemen pada Indeks Genap secara Terbalik**
+```java
+// for (int i = 4; i > -1; i--) {
+//     if (i % 2 == 0) {
+//         System.out.print(number[i]); 
+//         if (i > 1) {
+//             System.out.print(",");
+//         }
+//     } 
+// }
+```
+**Output:**  
+```
+5,3,1
+```
+
+**Penjelasan:**  
+- **Perulangan Mundur:** Dimulai dari indeks `4` hingga `0`.
+- `if (i % 2 == 0)`: Hanya mencetak elemen pada indeks **genap** dalam urutan terbalik.
+- Menambahkan koma jika indeks lebih besar dari `1` untuk menjaga format tampilan.
+
+---
+
+## ✨ **Soal 5: Menampilkan Elemen pada Indeks Ganjil**
+```java
+// for (int i = 0; i < number.length; i++) {
+//     if (i % 2 == 1) {
+//         System.out.print(number[i]);  
+//         if (i < 2) {
+//             System.out.print(",");
+//         } 
+//     }     
+// }
+```
+**Output:**  
+```
+2,4
+```
+
+**Penjelasan:**  
+- `if (i % 2 == 1)`: Hanya mencetak elemen pada indeks **ganjil** (`1, 3`).
+- Elemen pada indeks ganjil adalah: `number[1] = 2`, `number[3] = 4`.
+
+---
+
+## ✨ **Soal 6: Menampilkan Elemen Sesuai Pola Indeks**
+```java
+// int[] pola = {0, 0, 2, 1, 4}; 
+// for (int i = 0; i < pola.length; i++) {
+//     System.out.print(number[pola[i]]);
+//     if (i < pola.length - 1) {
+//         System.out.print(",");
+//     }
+// }
+```
+**Output:**  
+```
+1,1,3,2,5
+```
+
+**Penjelasan:**  
+- Array `pola` berisi indeks yang harus ditampilkan: `[0, 0, 2, 1, 4]`.
+- `number[0] = 1`, `number[2] = 3`, `number[1] = 2`, `number[4] = 5`.
+- Mengikuti pola, hasilnya adalah: `1,1,3,2,5`.
+
+---
+
+## 📝 **Kesimpulan:**
+Program ini memperlihatkan berbagai cara **mengakses dan menampilkan elemen array** sesuai dengan pola dan kondisi tertentu:  
+- **Urutan Biasa:** Menampilkan semua elemen.  
+- **Dengan Pemisah Koma:** Menambahkan koma pada tampilan.  
+- **Berdasarkan Indeks Ganjil/Genap:** Memfilter elemen array berdasarkan indeks.  
+- **Menggunakan Pola Khusus:** Menampilkan elemen sesuai urutan indeks pada array pola.
+
+Kalau kamu butuh penjelasan lebih lanjut atau ada soal lain yang perlu dibahas, beri tahu saja ya! 😊
 # Latihan 1
 
 ```java
