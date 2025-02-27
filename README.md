@@ -188,7 +188,7 @@ pada baris ini menampilkan isi array dan menghitung jumlah elemen:
 ```
 pada baris ini mencetak total semua elemen array. 
 
-### **Kesimpulan:**
+**Kesimpulan:**
 program diatas akan menghasilkan output seperti berikut:
 ```
 Isi array:
@@ -213,7 +213,7 @@ Kode diatas berfungsi mendeklarasikan metode `main`, yang merupakan titik awal e
 
 ---
 
-### **Deklarasi dan Inisialisasi Variabel**
+**Deklarasi dan Inisialisasi Variabel**
 ```java
         int[] nilai = {75, 80, 65, 90, 85, 70, 95, 88};
 ```
@@ -236,7 +236,7 @@ Kode diatas berfungsi mendeklarasikan variabel `indeks` dengan nilai awal `-1`. 
 
 ---
 
-### **Proses Pencarian dalam Array**
+**Proses Pencarian dalam Array**
 ```java
         for (int i = 0; i < nilai.length; i++) {
             if (nilai[i] == cari) {
@@ -255,7 +255,7 @@ Kode diatas berfungsi melakukan pencarian nilai dalam array menggunakan perulang
 
 ---
 
-### **Menampilkan Hasil Pencarian**
+**Menampilkan Hasil Pencarian**
 ```java
         if (ketemu) {
             System.out.println("Nilai " + cari + " ditemukan pada indeks " + indeks);
@@ -275,7 +275,7 @@ Kode diatas menampilkan hasil berdasarkan kondisi:
 
 ---
 
-### **Output Program**
+**Output Program**
 Karena nilai `90` terdapat dalam array pada indeks `3`, output yang dihasilkan adalah:
 ```
 Nilai 90 ditemukan pada indeks 3
@@ -298,7 +298,7 @@ Kode diatas mendeklarasikan metode `main`, yang merupakan titik awal eksekusi pr
 
 ---
 
-### **Deklarasi dan Inisialisasi Array**
+**Deklarasi dan Inisialisasi Array**
 ```java
         int[] nilai = {75, 80, 65, 90, 85, 70, 95, 88};
 ```
@@ -306,7 +306,7 @@ Kode diatas membuat array `nilai` bertipe `int` yang berisi nilai-nilai siswa: `
 
 ---
 
-### **Inisialisasi Variabel Statistik**
+**Inisialisasi Variabel Statistik**
 ```java
         int tertinggi = nilai[0];
         int terendah = nilai[0];
@@ -319,7 +319,7 @@ Kode diatas berfungsi meng inisialisasi variabel:
 
 ---
 
-### **Proses Menghitung Statistik**
+**Proses Menghitung Statistik**
 ```java
         for (int i = 1; i < nilai.length; i++) {
             if (nilai[i] > tertinggi) tertinggi = nilai[i];
@@ -335,7 +335,7 @@ Kode diatas menggunakan perulangan untuk menghitung nilai tertinggi, terendah, d
 
 ---
 
-### **Menghitung Rata-Rata**
+**Menghitung Rata-Rata**
 ```java
         double rataRata = (double) total / nilai.length;
 ```
@@ -344,7 +344,7 @@ Kode diatas menggunakan perulangan untuk menghitung nilai tertinggi, terendah, d
 
 ---
 
-### **Menampilkan Hasil Statistik**
+**Menampilkan Hasil Statistik**
 ```java
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
@@ -354,7 +354,7 @@ Kode diatas menampilkan nilai tertinggi, terendah, dan rata-rata ke konsol.
 
 ---
 
-### **Output Program**
+**Output Program**
 Berdasarkan data dalam array:
 - **Nilai Tertinggi:** 95
 - **Nilai Terendah:** 65
@@ -378,7 +378,7 @@ Rata-rata: 81.0
 
 ---
 
-### **Deklarasi Kelas dan Metode Utama**
+**Deklarasi Kelas dan Metode Utama**
 ```java
 public class OperasiMatriks {
 ```
@@ -391,7 +391,7 @@ kode diatas berfungsi mendeklarasikan metode `main`, yang merupakan titik awal e
 
 ---
 
-### **Inisialisasi Matriks A dan B**
+**Inisialisasi Matriks A dan B**
 ```java
         int[][] matriksA = {
             {1, 2, 3},
@@ -407,7 +407,7 @@ kode diatas berfungsi membuat dua **matriks 2D** bertipe `int`, yaitu `matriksA`
 
 ---
 
-### **Menyiapkan Matriks Hasil Penjumlahan**
+**Menyiapkan Matriks Hasil Penjumlahan**
 ```java
         int[][] hasil = new int[2][3];
 ```
@@ -415,7 +415,7 @@ kode diatas berfungsi mendeklarasikan matriks `hasil` dengan ukuran **2x3** untu
 
 ---
 
-### **Penjumlahan Matriks**
+**Penjumlahan Matriks**
 ```java
         for (int i = 0; i < matriksA.length; i++) {
             for (int j = 0; j < matriksA[0].length; j++) {
@@ -442,7 +442,7 @@ Elemen pada `(1,2)` adalah: `6 + 12 = 18`
 
 ---
 
-### **Menampilkan Hasil Penjumlahan Matriks**
+**Menampilkan Hasil Penjumlahan Matriks**
 ```java
         System.out.println("Hasil penjumlahan matriks:");
 ```
@@ -472,7 +472,7 @@ kode diatas berfungsi membuat baris baru setelah mencetak seluruh nilai dalam sa
 
 ---
 
-### **Output Program**
+**Output Program**
 ```
 Hasil penjumlahan matriks:
 8 10 12 
@@ -503,7 +503,7 @@ String[] namaSiswa = {"Ani", "Budi", "Cici", "Dodi", "Edi"};
 ```
 - Membuat **array** bertipe **String** untuk menyimpan **5 nama siswa**.
 
-### **Data Nilai Siswa**
+**Data Nilai Siswa**
 ```java
 int[][] nilai = {
     {80, 85, 90}, // Nilai Ani
@@ -538,7 +538,7 @@ for (int i = 0; i < nilai.length; i++) {
 }
 ```
 
-### **Penjelasan:**
+**Penjelasan:**
 **Mencetak Judul:**
    ```java
    System.out.println("Rata-rata nilai per siswa:");
@@ -590,7 +590,7 @@ for (int j = 0; j < nilai[0].length; j++) {
 }
 ```
 
-### **Penjelasan:**
+**Penjelasan:**
 
 **Mencetak Judul:**
    ```java
@@ -649,11 +649,9 @@ IPA: 87.60
 
 ---
 
-Berikut penjelasan kode program **TicTacToe** tanpa animasi:
-
 ---
 
-## **1. Deklarasi Kelas dan Metode Utama**
+**Deklarasi Kelas dan Metode Utama**
 ```java
 public class TicTacToe {
     public static void main(String[] args) {
@@ -663,7 +661,7 @@ public class TicTacToe {
 
 ---
 
-## **2. Membuat Papan TicTacToe**
+**Membuat Papan TicTacToe**
 
 ```java
 char[][] papan = new char[3][3];
@@ -673,7 +671,7 @@ char[][] papan = new char[3][3];
 
 ---
 
-## **3. Inisialisasi Papan dengan Karakter Kosong ('-')**
+**Inisialisasi Papan dengan Karakter Kosong ('-')**
 
 ```java
 for (int i = 0; i < 3; i++) {
@@ -684,21 +682,22 @@ for (int i = 0; i < 3; i++) {
 ```
 
 ### **Penjelasan:**
-1. **Looping Baris:**
+
+**Looping Baris:**
    ```java
    for (int i = 0; i < 3; i++)
    ```
    - **`i`** digunakan untuk **mengakses baris** dalam array.
    - **`< 3`** karena **array** memiliki **3 baris** (**indeks 0, 1, 2**).
 
-2. **Looping Kolom:**
+**Looping Kolom:**
    ```java
    for (int j = 0; j < 3; j++)
    ```
    - **`j`** digunakan untuk **mengakses kolom** dalam setiap baris.
    - **`< 3`** karena **array** memiliki **3 kolom** (**indeks 0, 1, 2**).
 
-3. **Inisialisasi Elemen Papan:**
+**Inisialisasi Elemen Papan:**
    ```java
    papan[i][j] = '-';
    ```
@@ -706,7 +705,7 @@ for (int i = 0; i < 3; i++) {
 
 ---
 
-## **4. Simulasi Beberapa Langkah Permainan**
+**simulasi Beberapa Langkah Permainan**
 
 ```java
 papan[0][0] = 'X';
@@ -714,27 +713,28 @@ papan[1][1] = 'O';
 papan[2][2] = 'X';
 ```
 
-### **Penjelasan:**
+**Penjelasan:**
+
 - **`papan[0][0] = 'X'`**: Menempatkan **'X'** pada **baris 0, kolom 0**.
 - **`papan[1][1] = 'O'`**: Menempatkan **'O'** pada **baris 1, kolom 1**.
 - **`papan[2][2] = 'X'`**: Menempatkan **'X'** pada **baris 2, kolom 2**.
 
 ---
 
-## **5. Menampilkan Status Papan**
+**Menampilkan Status Papan**
 
 ```java
 System.out.println("Status Papan:");
 tampilkanPapan(papan);
 ```
 
-### **Penjelasan:**
+**Penjelasan:**
 - **`System.out.println`** menampilkan teks **"Status Papan:"**.
 - Memanggil metode **`tampilkanPapan`** untuk **menampilkan kondisi papan** di konsol.
 
 ---
 
-## **6. Metode tampilkanPapan()**
+**Metode tampilkanPapan()**
 
 ```java
 public static void tampilkanPapan(char[][] papan) {
@@ -747,21 +747,21 @@ public static void tampilkanPapan(char[][] papan) {
 }
 ```
 
-### **Penjelasan:**
-1. **Deklarasi Metode:**
+**Penjelasan:**
+**Deklarasi Metode:**
    ```java
    public static void tampilkanPapan(char[][] papan)
    ```
    - Membuat metode **`tampilkanPapan`** yang menerima **array 2D** (**papan permainan**) sebagai **parameter**.
 
-2. **Looping Baris dan Kolom:**
+**Looping Baris dan Kolom:**
    ```java
    for (int i = 0; i < 3; i++) {
        for (int j = 0; j < 3; j++) {
    ```
    - **Dua perulangan** untuk **mengakses semua elemen array**.
 
-3. **Menampilkan Elemen Papan:**
+**Menampilkan Elemen Papan:**
    ```java
    System.out.print(papan[i][j] + " ");
    ```
@@ -789,3 +789,484 @@ X - -
 # Tugas 3
 
 # Soal 1
+
+---
+
+**Import Library Scanner**
+```java
+import java.util.Scanner;
+```
+- **`import java.util.Scanner`**: Mengimpor **kelas Scanner** untuk **membaca input** dari **pengguna** melalui **konsol**.
+
+---
+
+**Deklarasi Kelas dan Metode Utama**
+```java
+public class PerkalianMatriks {
+    public static void main(String[] args) {
+```
+- **`public class PerkalianMatriks`**: Membuat **kelas utama** dengan nama **`PerkalianMatriks`**.
+- **`public static void main(String[] args)`**: **Metode utama** yang akan **dieksekusi** saat **program dijalankan**.
+
+---
+
+**Membuat Objek Scanner**
+```java
+Scanner input = new Scanner(System.in);
+```
+- Membuat objek **`input`** dari **kelas Scanner** untuk **menerima input** dari **konsol**.
+
+---
+
+**Input Ukuran Matriks**
+```java
+System.out.print("Masukkan ukuran matriks (n x n): ");
+int n = input.nextInt();
+```
+- **`System.out.print`**: Menampilkan teks untuk **meminta input ukuran matriks** (**n x n**).
+- **`int n = input.nextInt()`**: Membaca **input bilangan bulat** (**ukuran matriks**) dan menyimpannya ke **variabel `n`**.
+
+---
+
+**Deklarasi Matriks A dan B**
+```java
+int[][] matriksA = new int[n][n];
+int[][] matriksB = new int[n][n];
+```
+- Membuat **dua array 2D** (**matriks A** dan **matriks B**) dengan **ukuran `n x n`**.
+- **`int[n][n]`** menunjukkan **matriks persegi** dengan **n baris** dan **n kolom**.
+
+---
+
+**Input Elemen Matriks A**
+```java
+System.out.println("Masukkan elemen matriks A:");
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        matriksA[i][j] = input.nextInt();
+    }
+}
+```
+
+**Penjelasan:**
+
+- **`System.out.println`**: Menampilkan teks **"Masukkan elemen matriks A:"**.
+- **Dua perulangan bersarang (nested loop)** digunakan untuk **mengisi elemen matriks A**:
+    - **Baris (`i`)**: Diulang **mulai 0 hingga n-1**.
+    - **Kolom (`j`)**: Diulang **mulai 0 hingga n-1**.
+    - **`matriksA[i][j] = input.nextInt()`**: Membaca **input elemen** dari **pengguna** dan **menyimpannya** pada **posisi (i,j)** di **matriks A**.
+
+---
+
+**Input Elemen Matriks B**
+```java
+System.out.println("Masukkan elemen matriks B:");
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        matriksB[i][j] = input.nextInt();
+    }
+}
+```
+- Prosesnya **sama** dengan **input matriks A**, tetapi ini untuk **matriks B**.
+
+---
+
+**Perkalian Matriks**
+```java
+int[][] hasilKali = new int[n][n];
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        for (int k = 0; k < n; k++) {
+            hasilKali[i][j] += matriksA[i][k] * matriksB[k][j];
+        }
+    }
+}
+```
+
+**Penjelasan:**
+
+1. **Deklarasi Matriks Hasil:**
+```java
+int[][] hasilKali = new int[n][n];
+```
+- Membuat **array 2D** untuk **menyimpan hasil perkalian matriks**.
+
+**Proses Perkalian Matriks:**
+```java
+for (int i = 0; i < n; i++) {          // Looping baris matriksA
+    for (int j = 0; j < n; j++) {      // Looping kolom matriksB
+        for (int k = 0; k < n; k++) {  // Looping elemen untuk perkalian
+            hasilKali[i][j] += matriksA[i][k] * matriksB[k][j];
+        }
+    }
+}
+```
+
+- **Tiga perulangan bersarang (nested loop)** untuk **menghitung elemen matriks hasil**:
+    - **`i`**: Baris **matriks A**.
+    - **`j`**: Kolom **matriks B**.
+    - **`k`**: Indeks untuk **mengalikan elemen** pada **baris matriks A** dan **kolom matriks B**.
+
+- **Operasi Perkalian Matriks:**
+```java
+hasilKali[i][j] += matriksA[i][k] * matriksB[k][j];
+```
+- Mengalikan **elemen baris `i` pada matriks A** dengan **elemen kolom `j` pada matriks B**, kemudian **menjumlahkannya** ke **elemen (i,j) pada matriks hasil**.
+
+---
+
+**Menampilkan Hasil Perkalian Matriks**
+```java
+System.out.println("\nHasil Perkalian Matriks A * B:");
+for (int[] baris : hasilKali) {
+    for (int elemen : baris) {
+        System.out.print(elemen + "\t");
+    }
+    System.out.println();
+}
+```
+
+**Penjelasan:**
+
+**Menampilkan Judul:**
+```java
+System.out.println("\nHasil Perkalian Matriks A * B:");
+```
+- Memberikan **judul output** untuk **hasil perkalian matriks**.
+
+**Menampilkan Matriks Hasil:**
+```java
+for (int[] baris : hasilKali) {
+    for (int elemen : baris) {
+        System.out.print(elemen + "\t");
+    }
+    System.out.println();
+}
+```
+- Menggunakan **for-each loop** untuk **menampilkan setiap elemen matriks**.
+- **`\t`** digunakan untuk memberikan **jarak/tab** antar **elemen dalam baris**.
+- **`System.out.println()`** digunakan untuk **ganti baris** setelah **menampilkan satu baris matriks**.
+
+---
+
+**Menutup Scanner**
+```java
+input.close();
+```
+- Menutup **objek Scanner** untuk **menghindari kebocoran memori**.
+
+---
+
+**Contoh Input dan Output:**
+
+**Input:**
+```text
+Masukkan ukuran matriks (n x n): 2
+Masukkan elemen matriks A:
+1 2
+3 4
+Masukkan elemen matriks B:
+5 6
+7 8
+```
+
+**Output:**
+```text
+Hasil Perkalian Matriks A * B:
+19	22	
+43	50
+```
+
+---
+
+# Soal 2
+
+Berikut ini penjelasan kode program **Transpose Matriks** dalam bahasa **Java** tanpa animasi:
+
+---
+
+**Mengimpor Library Scanner**
+```java
+import java.util.Scanner;
+```
+- **`import java.util.Scanner`**: Mengimpor **kelas Scanner** untuk **membaca input** dari **pengguna** melalui **konsol**.
+
+---
+
+**Deklarasi Kelas dan Metode Utama**
+```java
+public class TransposeMatriks {
+    public static void main(String[] args) {
+```
+- **`public class TransposeMatriks`**: Membuat **kelas utama** dengan nama **`TransposeMatriks`**.
+- **`public static void main(String[] args)`**: **Metode utama** yang akan **dieksekusi** saat **program dijalankan**.
+
+---
+
+**Membuat Objek Scanner**
+
+```java
+Scanner input = new Scanner(System.in);
+```
+- Membuat objek **`input`** dari **kelas Scanner** untuk **menerima input** dari **konsol**.
+
+---
+
+**Input Ukuran Matriks**
+```java
+System.out.print("Masukkan ukuran matriks (n x n): ");
+int n = input.nextInt();
+```
+- **`System.out.print`**: Menampilkan teks untuk **meminta input ukuran matriks** (**n x n**).
+- **`int n = input.nextInt()`**: Membaca **input bilangan bulat** (**ukuran matriks**) dan menyimpannya ke **variabel `n`**.
+
+---
+
+**Deklarasi Matriks**
+```java
+int[][] matriks = new int[n][n];
+```
+- Membuat **array 2D** (**matriks**) dengan **ukuran `n x n`**.
+- **`int[n][n]`** menunjukkan **matriks persegi** dengan **n baris** dan **n kolom**.
+
+---
+
+**Input Elemen Matriks**
+```java
+System.out.println("Masukkan elemen matriks:");
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        matriks[i][j] = input.nextInt();
+    }
+}
+```
+
+**Penjelasan:**
+- **`System.out.println`**: Menampilkan teks **"Masukkan elemen matriks:"**.
+- **Dua perulangan bersarang (nested loop)** digunakan untuk **mengisi elemen matriks**:
+    - **Baris (`i`)**: Diulang **mulai 0 hingga n-1**.
+    - **Kolom (`j`)**: Diulang **mulai 0 hingga n-1**.
+    - **`matriks[i][j] = input.nextInt()`**: Membaca **input elemen** dari **pengguna** dan **menyimpannya** pada **posisi (i,j)** di **matriks**.
+
+---
+
+**Transpose Matriks**
+```java
+int[][] hasilTranspose = new int[n][n];
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        hasilTranspose[j][i] = matriks[i][j];
+    }
+}
+```
+
+**Penjelasan:**
+1. **Deklarasi Matriks Hasil Transpose:**
+```java
+int[][] hasilTranspose = new int[n][n];
+```
+- Membuat **array 2D** untuk **menyimpan hasil transpose matriks**.
+
+**Proses Transpose Matriks:**
+```java
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        hasilTranspose[j][i] = matriks[i][j];
+    }
+}
+```
+- **Dua perulangan bersarang** untuk **membalik baris menjadi kolom dan sebaliknya**:
+    - **Baris (`i`)** dan **Kolom (`j`)** di **matriks asli** ditukar posisinya di **matriks hasil**.
+    - **`hasilTranspose[j][i] = matriks[i][j]`** artinya **elemen baris ke-i dan kolom ke-j** pada **matriks asli** akan **berada pada baris ke-j dan kolom ke-i** di **matriks hasil**.
+
+---
+
+**Menampilkan Hasil Transpose Matriks**
+```java
+System.out.println("\nHasil Transpose Matriks:");
+for (int[] baris : hasilTranspose) {
+    for (int elemen : baris) {
+        System.out.print(elemen + "\t");
+    }
+    System.out.println();
+}
+```
+
+**Penjelasan:**
+
+**Menampilkan Judul:**
+```java
+System.out.println("\nHasil Transpose Matriks:");
+```
+- Memberikan **judul output** untuk **hasil transpose matriks**.
+
+**Menampilkan Matriks Hasil:**
+```java
+for (int[] baris : hasilTranspose) {
+    for (int elemen : baris) {
+        System.out.print(elemen + "\t");
+    }
+    System.out.println();
+}
+```
+- Menggunakan **for-each loop** untuk **menampilkan setiap elemen matriks**.
+- **`\t`** digunakan untuk memberikan **jarak/tab** antar **elemen dalam baris**.
+- **`System.out.println()`** digunakan untuk **ganti baris** setelah **menampilkan satu baris matriks**.
+
+---
+
+**Menutup Scanner**
+```java
+input.close();
+```
+- Menutup **objek Scanner** untuk **menghindari kebocoran memori**.
+
+---
+
+**Contoh Input dan Output:**
+
+**Input:**
+```text
+Masukkan ukuran matriks (n x n): 3
+Masukkan elemen matriks:
+1 2 3
+4 5 6
+7 8 9
+```
+
+**Output:**
+```text
+Hasil Transpose Matriks:
+1	4	7	
+2	5	8	
+3	6	9
+```
+
+**Proses Transpose Manual:**
+```text
+Sebelum Transpose:              Setelah Transpose:
+[1 2 3]                         [1 4 7]
+[4 5 6]    Transpose --->       [2 5 8]
+[7 8 9]                         [3 6 9]
+```
+
+---
+
+# Soal 3
+
+---
+
+**Mengimpor Library Scanner**
+```java
+import java.util.Scanner;
+```
+- **`import java.util.Scanner`**: Mengimpor **kelas Scanner** untuk **membaca input** dari **pengguna** melalui **konsol**.
+
+---
+
+ **Deklarasi Kelas dan Metode Utama**
+```java
+public class DiagonalMatriks {
+    public static void main(String[] args) {
+```
+- **`public class DiagonalMatriks`**: Membuat **kelas utama** dengan nama **`DiagonalMatriks`**.
+- **`public static void main(String[] args)`**: **Metode utama** yang akan **dieksekusi** saat **program dijalankan**.
+
+---
+
+**Membuat Objek Scanner**
+```java
+Scanner input = new Scanner(System.in);
+```
+- Membuat objek **`input`** dari **kelas Scanner** untuk **menerima input** dari **konsol**.
+
+---
+
+**Input Ukuran Matriks**
+```java
+System.out.print("Masukkan ukuran matriks (n x n): ");
+int n = input.nextInt();
+```
+- **`System.out.print`**: Menampilkan teks untuk **meminta input ukuran matriks** (**n x n**).
+- **`int n = input.nextInt()`**: Membaca **input bilangan bulat** (**ukuran matriks**) dan menyimpannya ke **variabel `n`**.
+
+---
+
+**Deklarasi Matriks**
+```java
+int[][] matriks = new int[n][n];
+```
+- Membuat **array 2D** (**matriks**) dengan **ukuran `n x n`**.
+- **`int[n][n]`** menunjukkan **matriks persegi** dengan **n baris** dan **n kolom**.
+
+---
+
+**Input Elemen Matriks**
+```java
+System.out.println("Masukkan elemen matriks:");
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        matriks[i][j] = input.nextInt();
+    }
+}
+```
+
+**Penjelasan:**
+- **`System.out.println`**: Menampilkan teks **"Masukkan elemen matriks:"**.
+- **Dua perulangan bersarang (nested loop)** digunakan untuk **mengisi elemen matriks**:
+    - **Baris (`i`)**: Diulang **mulai 0 hingga n-1**.
+    - **Kolom (`j`)**: Diulang **mulai 0 hingga n-1**.
+    - **`matriks[i][j] = input.nextInt()`**: Membaca **input elemen** dari **pengguna** dan **menyimpannya** pada **posisi (i,j)** di **matriks**.
+
+---
+
+**Menampilkan Diagonal Utama Matriks**
+```java
+System.out.println("\nDiagonal Utama Matriks:");
+for (int i = 0; i < n; i++) {
+    System.out.print(matriks[i][i] + " ");
+}
+System.out.println();
+```
+
+**Penjelasan:**
+- **Diagonal Utama** terdiri dari **elemen** yang **baris dan kolomnya sama** (**i = j**).
+- Menggunakan **loop tunggal** untuk **menampilkan elemen** dari **matriks[i][i]**:
+    - **Indeks (0,0), (1,1), (2,2), ... (n-1,n-1)**.
+    - **Contoh**: Untuk matriks **3x3**, elemen diagonal utama adalah **matriks[0][0], matriks[1][1], matriks[2][2]**.
+
+---
+
+**Menampilkan Diagonal Samping Matriks**
+```java
+System.out.println("\nDiagonal Samping Matriks:");
+for (int i = 0; i < n; i++) {
+    System.out.print(matriks[i][n - 1 - i] + " ");
+}
+System.out.println();
+```
+
+**Penjelasan:**
+- **Diagonal Samping** terdiri dari **elemen** yang **barisnya `i`** dan **kolomnya `(n-1-i)`**:
+    - **Indeks (0,n-1), (1,n-2), (2,n-3), ... (n-1,0)**.
+    - **Contoh**: Untuk matriks **3x3**, elemen diagonal samping adalah **matriks[0][2], matriks[1][1], matriks[2][0]**.
+
+---
+
+**Menutup Scanner**
+```java
+input.close();
+```
+- Menutup **objek Scanner** untuk **menghindari kebocoran memori**.
+
+---
+
+**Output:**
+```text
+Diagonal Utama Matriks:
+1 5 9 
+
+Diagonal Samping Matriks:
+3 5 7
+```
+---
