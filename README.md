@@ -269,23 +269,7 @@ kode diatas berfungsi mendeklarasikan metode `main`, yang merupakan titik awal e
             {10, 11, 12}
         };
 ```
-kode diatas berfungsi membuat dua **matriks 2D** bertipe `int`, yaitu `matriksA` dan `matriksB`, dengan ukuran **2x3**:  
-
-**Matriks A:**  
-\[
-\begin{bmatrix}
-1 & 2 & 3 \\
-4 & 5 & 6
-\end{bmatrix}
-\]
-
-**Matriks B:**  
-\[
-\begin{bmatrix}
-7 & 8 & 9 \\
-10 & 11 & 12
-\end{bmatrix}
-\]
+kode diatas berfungsi membuat dua **matriks 2D** bertipe `int`, yaitu `matriksA` dan `matriksB`, 
 
 ---
 
