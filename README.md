@@ -6,7 +6,7 @@
 
 ---
 
-**Soal 1: Menampilkan Semua Elemen Array**
+**Menampilkan Semua Elemen Array**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     System.out.print(number[i] + " ");     
@@ -18,12 +18,12 @@
 ```
 
 **Penjelasan:**  
-- `for (int i = 0; i < number.length; i++)`: Perulangan dari indeks `0` hingga `4` (panjang array adalah `5`).
-- `System.out.print(number[i] + " ")`: Mencetak setiap elemen array `number` diikuti spasi.
+- `for (int i = 0; i < number.length; i++)`: kode ini berfungsi melakukan perulangan dari indeks `0` hingga `4` (panjang array adalah `5`).
+- `System.out.print(number[i] + " ")`: kode ini berfungsi Mencetak setiap elemen array `number` diikuti spasi.
 
 ---
 
-**Soal 2: Menampilkan Elemen dengan Pemisah Koma**
+**Menampilkan Elemen dengan Pemisah Koma**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     System.out.print(number[i]);
@@ -38,12 +38,12 @@
 ```
 
 **Penjelasan:**  
-- Mencetak setiap elemen array tanpa spasi.
-- `if (i < 4)`: Menambahkan koma (`,`) jika indeks belum mencapai elemen terakhir (`4`).
+- output kode program ini mencetak setiap elemen array tanpa spasi.
+- `if (i < 4)`: kode ini berfungsi menambahkan koma (`,`) jika indeks belum mencapai elemen terakhir (`4`).
 
 ---
 
-**Soal 3: Menampilkan Elemen pada Indeks Genap**
+**Menampilkan Elemen pada Indeks Genap**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     if (i % 2 == 0) {
@@ -60,12 +60,12 @@
 ```
 
 **Penjelasan:**  
-- `if (i % 2 == 0)`: Hanya mencetak elemen pada indeks **genap** (`0, 2, 4`).
+- `if (i % 2 == 0)`: kode ini Hanya mencetak elemen pada indeks **genap** (`0, 2, 4`).
 - Elemen pada indeks genap adalah: `number[0] = 1`, `number[2] = 3`, `number[4] = 5`.
 
 ---
 
-**Soal 4: Menampilkan Elemen pada Indeks Genap secara Terbalik**
+**Menampilkan Elemen pada Indeks Genap secara Terbalik**
 ```java
 // for (int i = 4; i > -1; i--) {
 //     if (i % 2 == 0) {
@@ -83,12 +83,12 @@
 
 **Penjelasan:**  
 - **Perulangan Mundur:** Dimulai dari indeks `4` hingga `0`.
-- `if (i % 2 == 0)`: Hanya mencetak elemen pada indeks **genap** dalam urutan terbalik.
+- `if (i % 2 == 0)`: kode ini berfungsi mencetak elemen pada indeks **genap** dalam urutan terbalik.
 - Menambahkan koma jika indeks lebih besar dari `1` untuk menjaga format tampilan.
 
 ---
 
-**Soal 5: Menampilkan Elemen pada Indeks Ganjil**
+**Menampilkan Elemen pada Indeks Ganjil**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     if (i % 2 == 1) {
@@ -105,7 +105,7 @@
 ```
 
 **Penjelasan:**  
-- `if (i % 2 == 1)`: Hanya mencetak elemen pada indeks **ganjil** (`1, 3`).
+- `if (i % 2 == 1)`: kode ini berfungsi mencetak elemen pada indeks **ganjil** (`1, 3`).
 - Elemen pada indeks ganjil adalah: `number[1] = 2`, `number[3] = 4`.
 
 ---
