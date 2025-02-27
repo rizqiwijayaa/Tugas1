@@ -244,7 +244,7 @@ Rata-rata: 81.0
 
 ---
 
-### **1. Deklarasi Kelas dan Metode Utama**
+### **Deklarasi Kelas dan Metode Utama**
 ```java
 public class OperasiMatriks {
 ```
@@ -257,7 +257,7 @@ kode diatas berfungsi mendeklarasikan metode `main`, yang merupakan titik awal e
 
 ---
 
-### **2. Inisialisasi Matriks A dan B**
+### **Inisialisasi Matriks A dan B**
 ```java
         int[][] matriksA = {
             {1, 2, 3},
@@ -289,7 +289,7 @@ kode diatas berfungsi membuat dua **matriks 2D** bertipe `int`, yaitu `matriksA`
 
 ---
 
-### **3. Menyiapkan Matriks Hasil Penjumlahan**
+### **Menyiapkan Matriks Hasil Penjumlahan**
 ```java
         int[][] hasil = new int[2][3];
 ```
@@ -297,7 +297,7 @@ kode diatas berfungsi mendeklarasikan matriks `hasil` dengan ukuran **2x3** untu
 
 ---
 
-### **4. Penjumlahan Matriks**
+### **Penjumlahan Matriks**
 ```java
         for (int i = 0; i < matriksA.length; i++) {
             for (int j = 0; j < matriksA[0].length; j++) {
@@ -324,7 +324,7 @@ Elemen pada `(1,2)` adalah: `6 + 12 = 18`
 
 ---
 
-### **5. Menampilkan Hasil Penjumlahan Matriks**
+### **Menampilkan Hasil Penjumlahan Matriks**
 ```java
         System.out.println("Hasil penjumlahan matriks:");
 ```
@@ -354,7 +354,7 @@ kode diatas berfungsi membuat baris baru setelah mencetak seluruh nilai dalam sa
 
 ---
 
-### **6. Output Program**
+### **Output Program**
 ```
 Hasil penjumlahan matriks:
 8 10 12 
