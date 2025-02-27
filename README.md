@@ -6,7 +6,7 @@
 
 ---
 
-##**Soal 1: Menampilkan Semua Elemen Array**
+**Soal 1: Menampilkan Semua Elemen Array**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     System.out.print(number[i] + " ");     
@@ -23,7 +23,7 @@
 
 ---
 
-## ✨ **Soal 2: Menampilkan Elemen dengan Pemisah Koma**
+**Soal 2: Menampilkan Elemen dengan Pemisah Koma**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     System.out.print(number[i]);
@@ -43,7 +43,7 @@
 
 ---
 
-## ✨ **Soal 3: Menampilkan Elemen pada Indeks Genap**
+**Soal 3: Menampilkan Elemen pada Indeks Genap**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     if (i % 2 == 0) {
@@ -65,7 +65,7 @@
 
 ---
 
-## ✨ **Soal 4: Menampilkan Elemen pada Indeks Genap secara Terbalik**
+**Soal 4: Menampilkan Elemen pada Indeks Genap secara Terbalik**
 ```java
 // for (int i = 4; i > -1; i--) {
 //     if (i % 2 == 0) {
@@ -88,7 +88,7 @@
 
 ---
 
-## ✨ **Soal 5: Menampilkan Elemen pada Indeks Ganjil**
+**Soal 5: Menampilkan Elemen pada Indeks Ganjil**
 ```java
 // for (int i = 0; i < number.length; i++) {
 //     if (i % 2 == 1) {
@@ -110,7 +110,7 @@
 
 ---
 
-## ✨ **Soal 6: Menampilkan Elemen Sesuai Pola Indeks**
+**Soal 6: Menampilkan Elemen Sesuai Pola Indeks**
 ```java
 // int[] pola = {0, 0, 2, 1, 4}; 
 // for (int i = 0; i < pola.length; i++) {
@@ -132,14 +132,6 @@
 
 ---
 
-## 📝 **Kesimpulan:**
-Program ini memperlihatkan berbagai cara **mengakses dan menampilkan elemen array** sesuai dengan pola dan kondisi tertentu:  
-- **Urutan Biasa:** Menampilkan semua elemen.  
-- **Dengan Pemisah Koma:** Menambahkan koma pada tampilan.  
-- **Berdasarkan Indeks Ganjil/Genap:** Memfilter elemen array berdasarkan indeks.  
-- **Menggunakan Pola Khusus:** Menampilkan elemen sesuai urutan indeks pada array pola.
-
-Kalau kamu butuh penjelasan lebih lanjut atau ada soal lain yang perlu dibahas, beri tahu saja ya! 😊
 # Latihan 1
 
 ```java
